@@ -1,0 +1,405 @@
+/* Custom styling for the Furniro site */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.icon {
+    font-size: 24px;
+    margin: 10px;
+}
+
+header {
+    background-color: white;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.btn.btn-primary {
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Vertically center the text */
+    justify-content: center; /* Horizontally center the text */
+    width: 222px; /* Set the width */
+    height: 74px; /* Set the height */
+    font-size: 16px; /* Set the text size */
+    text-align: center; /* Center the text horizontally (optional with Flexbox) */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+    text-decoration: none; /* Remove underline from link */
+    background-color: #B88E2F;
+    border: none; 
+    border-radius: 0;
+    font-weight:bold;
+}
+
+
+.btn.btn-primary:hover {
+    background-color: #a87f45;
+    border-color: #a87f45;
+}
+
+
+
+
+/* Logo font styling */
+.logo h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Bold weight */
+    font-size: 34px; /* Font size for the Furniro logo */
+    margin: 0; /* To avoid extra space around the logo text */
+}
+
+.hero-section {
+    position: relative; /* Set up positioning context */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent content overflow */
+}
+
+.hero-section img {
+    position: absolute; /* Position the image behind the text */
+    top: 0;
+    right: 0;
+    width: 100%; /* Ensure image covers full width */
+    height: 100%; /* Ensure image covers full height */
+    object-fit: cover; /* Ensure image covers the section properly */
+    z-index: -1; /* Place the image behind the content */
+}
+
+.container-hero {
+    position: relative; /* Ensure proper layering with z-index */
+    z-index: 10; /* Place content above the image */
+    padding-top: 150px; /* Add padding if needed */
+    padding-right: 80px;
+    width: 100%; /* Ensure container width is responsive */
+}
+
+.text-section {
+    background: #FFF3E3;
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    max-width: 100%; /* Ensure text section doesn't overflow */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+   
+}
+
+
+/* Text Section Styling for hero content */
+.text-section {
+    color: #B88E2F;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Responsive header styling */
+header .nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+header .nav-link:hover {
+    color: #b99055;
+}
+
+header .d-flex img {
+    width: 24px;
+    height: auto;
+}
+
+/* General styling for hero section typography */
+h1.display-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Use bold weight */
+    font-size: 48px; /* Large font size for the headline */
+}
+
+h2.text-muted {
+    font-size: 24px;
+}
+
+.text-section p {
+    font-size: 16px;
+    color: #666666; /* Lighter grey for the paragraph text */
+}/* Custom Styling for the Browse Section */
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body h5 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1000px;
+    align-items: flex-end;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.text-muted {
+    font-size: 16px;
+    color:#333333;
+    font-family: Poppins;
+    font-size: 16px;
+}
+
+
+/* Adjusting margins for cleaner layout */
+h2, h1, p {
+    margin-bottom: 20px;
+}
+
+
+/* Product Grid Styling */
+.product-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    background-color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+.product-info h5 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-info p {
+    margin: 0;
+    color: #777;
+}
+
+.product-info .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product-info .old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.product-info .discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.product-info .new-product {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Overlay for product on hover */
+.product-card:hover .product-info.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.product-info.overlay .action-buttons {
+    display: block;
+    margin-top: 20px;
+}
+
+.product-info.overlay .action-buttons a {
+    color: white;
+    border-color: white;
+}
+
+.product-info.overlay .share-options {
+    font-size: 12px;
+    color: white;
+    margin-top: 10px;
+}
+
+.product-info.overlay {
+    color: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.product-card:hover .product-info.overlay {
+    color: white;
+}
+
+.share-options {
+            display: flex;
+            justify-content: center; /* Center the icons horizontally if needed */
+            gap: 15px; /* Adds a gap between each link */
+        }
+
+        .share-options a {
+            color: #fff; /* White color for the text */
+            text-decoration: none; /* Remove underline from links */
+            display: flex; /* Ensure the icon and text are aligned correctly */
+            align-items: center; /* Align text and icon vertically */
+        }
+
+        .share-options i {
+            font-size: 1.2rem; /* Size of the icons */
+            margin-right: 8px; /* Space between icon and text */
+        }
+
+        .share-options a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+/* Show More Button */
+.btn-outline-primary {
+    border-color: #b99055;
+    color: #b99055;
+}
+
+.btn-outline-primary:hover {
+    background-color: #b99055;
+    color: white;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #eaeaea;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-dots .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+.subscribe-container .subscribe-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -50px; 
+}
+
+.room-inspiration {
+    background-color: #fef8f4;
+    color: #333;
+}
+
+.room-inspiration h1 {
+    font-size: 2.5rem;
+}
+
+.room-inspiration p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.explore-btn {
+    background-color: #ffbe47;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #f0a02b;
+    color: #fff;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 300px; /* Set desired height for the carousel */
+}
+
+.carousel-item img {
+    height: 100%; /* Makes image height equal to carousel item height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-caption .room-number {
+    font-size: 14px;
+    color: #fff;
+}
+
+.carousel-caption .room-title {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.carousel-arrow {
+    font-size: 24px;
+    color: #ffbe47;
+    text-decoration: none;
+}
+
+.carousel-arrow:hover {
+    color: #f0a02b;
+}
+
+.carousel-indicators button {
+    background-color: #ccc;
+}
+
+.carousel-indicators .active {
+    background-color: #ffbe47;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
